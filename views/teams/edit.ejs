@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+    <h1>Edit this Team: <%= team.teamname %></h1>
+    <form id="new-form" action="/teams/<%= teamId %>?_method=PUT" method="POST">
+    <label>Team Name:</label>
+    <input type="text" name="teamname" value="<%= team.teamname %>">
+    <label>Conference:</label>
+    <input type="text" name="conference" value="<%= team.conference %>">
+    <label>Ranking:</label>
+    <input type="text" name="ranking" value="<%= team.ranking %>">
+    <input type="submit" value="Edit Team">
+    </form>
+  
+
+<%- include('../partials/footer') %>

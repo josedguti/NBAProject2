@@ -1,10 +1,3 @@
-module.exports = {
-    deleteOne,
-    getOne,
-    updateOne,
-}
-
-
 const mongoose = require('mongoose');
 const teams = require('../controllers/teams');
 const Schema = mongoose.Schema;
@@ -33,18 +26,6 @@ const teamSchema = new Schema({
 }, {
     timestamps: true
 });
-
-function getOne(id) {
-    return teams[id];
-}
-
-function deleteOne(id) {
-    teams.splice(id, 1);
-}
-
-function updateOne(id, updatedTeam) {
-    teams.splice(id, 1, updatedTeam);
-}
 
 module.exports = mongoose.model('Team', teamSchema);
 

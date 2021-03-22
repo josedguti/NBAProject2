@@ -58,6 +58,9 @@
   <textarea name="content"></textarea>
   <input type="submit" value="Add Comment" />
 </form>
-
+<form action="/teams/<%= team._id %>?_method=DELETE" method="POST" class="dltbut">
+    <button type="submit">Delete Team</button>
+</form>
+<a href="/teams/<%= team._id %>/edit">Edit this Team</a>
 
 <%- include('../partials/footer') %>

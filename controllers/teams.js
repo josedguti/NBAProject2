@@ -30,22 +30,25 @@ function create(req, res) {
 }
 
 function deleteTeam(req, res) {
-    Team.deleteOne(req.params.id);
-    res.redirect('/teams');
-}
-
-function edit(req, res) {
-    const team = Team.getOne(req.params.id);
-    res.render('teams/edit', {
-        team,
-        teamId: req.params.id,
+    Team.findByIdAndDelete(req.params.id, function(err, team) {
+        res.redirect('/teams');
     });
 }
 
-function update (req, res) {
-    console.log(req.body);
-    Team.updateOne(req.params.id, req.body);
-    res.redirect('/teams/' + req.params.id);
+function edit(req, res) {
+    Team.findById(req.params.id, function(err, team) {
+        res.render('teams/edit', {
+            title: 'Edit Team',
+            team,
+            teamId: req.params.id,
+        });
+    });
+}
+
+function update(req, res) {
+    Team.findByIdAndUpdate(req.params.id, req.body, function(err, team) {
+        res.redirect('/teams/' + req.params.id);
+    });
 }
 
 
