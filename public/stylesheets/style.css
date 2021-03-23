@@ -36,8 +36,11 @@
     grid-area: main;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgba(36, 25, 82, 0.5);
+    align-items: flex-start;
+    background-image: url('../images/lebron.png');
+    background-repeat: no-repeat;
+    
+    background-position: right center;
     padding: 20px;
     overflow-y: scroll;
   }
