@@ -41,6 +41,10 @@
         <tr>
           <td><%= c.createdAt.toLocaleDateString() %></td>
           <td><%= c.content %></td>
+        </form>
+        <form action="/teams/<%= c._id %>?_method=DELETE" method="POST" id="add-player-form">
+            <button type="submit">Delete Comment</button>
+        </form>
         </tr>
       <% }); %>
     </tbody>

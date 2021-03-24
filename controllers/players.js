@@ -25,15 +25,9 @@ function addToLineUp(req, res) {
     });
 }
 
-function deletePlayer(req, res) {
-    Team.findByIdAndDelete(req.params.id, function(err, player) {
-        res.redirect('/players/new');
-    });
-}
 
 module.exports = {
     new: newPlayer,
     create,
     addToLineUp,
-    delete: deletePlayer,
 };
