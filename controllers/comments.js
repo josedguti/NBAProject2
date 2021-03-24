@@ -1,4 +1,3 @@
-const team = require('../models/team');
 const Team = require('../models/team');
 
 function create(req, res) {
@@ -10,19 +9,6 @@ function create(req, res) {
     });
 }
 
-function deleteComment(req, res) {
-    Team.findByIdAndDelete(req.params.id, function(err, comment) {
-        res.redirect(`/teams/${team._id}`);
-    });
-}
-
-// function deleteTeam(req, res) {
-//     Team.findByIdAndDelete(req.params.id, function(err, team) {
-//         res.redirect('/teams');
-//     });
-// }
-
 module.exports = {
     create,
-    delete: deleteComment,
 };

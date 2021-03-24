@@ -21,7 +21,7 @@
   
   body > nav {
     grid-area: nav;
-    background-color: rgba(30, 30, 30, 0.2);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,9,121,1) 49%, rgba(13,104,124,1) 94%);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -40,6 +40,7 @@
     align-items: flex-start;
     background-image: url('../images/lebron.png');
     background-repeat: no-repeat;
+    background-color: rgba(16, 18, 22, 0.9);
     
     background-position: right center;
     padding: 20px;
