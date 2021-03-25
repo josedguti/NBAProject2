@@ -9,12 +9,14 @@
 </head>
 <body>
   <nav>
-    
-    <a href="/teams/new" <%- title === 'Add Team' ? 'class="active"' : '' %>>ADD TEAM</a>
-    <img src="/images/ball.png">
+
     <a href="/teams" <%- title === 'All Teams' ? 'class="active"' : '' %>>ALL TEAMS</a>
     <img src="/images/ball.png">
+    <a href="/teams/new" <%- title === 'Add Team' ? 'class="active"' : '' %>>ADD TEAM</a>
+    <img src="/images/ball.png">
     <a href="/players/new" <%- title === 'Add Player' ? 'class=active' : '' %>>ADD PLAYER</a>
+    <img src="/images/ball.png">
+    <a href="/google/" <%- title === 'Login' ? 'class=active' : '' %>>LOGIN</a>
   </nav>
   <main>
     <h1><%= title %></h1>

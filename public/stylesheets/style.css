@@ -133,17 +133,40 @@
      display: grid;
      grid-template-columns: auto auto;
      grid-gap: 1rem;
-     
    }
   
    #add-comment-form input[type="submit"], #add-player-form input[type='submit'] {
      width: 10rem;
      grid-column: 2 / 3;
      margin-bottom: 2rem;
-     
    }
 
-   #lebron {
-     background-size: 100%;
+   textarea {
+     width: 200px;
+     height: 100px;
+     resize: none;
    }
   
+   #add-player-form input[type='submit']:hover {
+     cursor: pointer;
+     background: #424748;
+     box-shadow: 2px 2px;
+   }
+
+   #add-comment-form input[type="submit"]:hover {
+    cursor: pointer;
+    background: #424748;
+    box-shadow: 2px 2px;
+   }
+
+   #new-form input[type="submit"]:hover {
+    cursor: pointer;
+    background: #424748;
+    box-shadow: 2px 2px;
+   }
+
+   #btns input[type="submit"]:hover {
+    cursor: pointer;
+    background: #424748;
+    box-shadow: 2px 2px;
+   }

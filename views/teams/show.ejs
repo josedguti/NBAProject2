@@ -16,13 +16,13 @@
   </ul>
 </section>
  <!-- Allow user to associate players not already in this team lineup -->
- <form action="/teams/<%= team._id %>/players" method="post" id="add-per-to-cast">
+ <form action="/teams/<%= team._id %>/players" method="post" id="add-player-form">
     <select name="playerId">
       <% players.forEach(function(p) { %>
         <option value="<%= p._id %>"><%= p.playername %></option>
       <% }) %>
     </select>
-    <button type="submit">Add to Lineup</button>
+    <input type="submit" value="Add to Lineup">
  </form>
 <h2>Comments</h2>
 <% if (team.comments.length) { %>
@@ -56,13 +56,13 @@
   action="/teams/<%= team._id %>/comments"
 >
   <label>Comment:</label>
-  <textarea name="content"></textarea>
+  <textarea name="content" placeholder="Leave your comment here!"></textarea>
   <input type="submit" value="Add Comment" />
 </form>
 <form action="/teams/<%= team._id %>?_method=DELETE" method="POST" id="add-player-form">
-    <button type="submit">Delete Team</button>
+    <input type="submit" value="Delete Team">
 </form>
 <form action="/teams/<%= team._id %>/edit" id="add-player-form">
-  <button type="submit">Edit this Team</button>
+  <input type="submit" value="Edit this Team">
 </form>
 <%- include('../partials/footer') %>
