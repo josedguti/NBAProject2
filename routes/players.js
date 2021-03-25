@@ -3,8 +3,16 @@ const router = express.Router();
 const playersCtrl = require('../controllers/players');
 
 
-router.get('/players/new', playersCtrl.new);
-router.post('/players', playersCtrl.create);
-router.post('/teams/:id/players', playersCtrl.addToLineUp);
+require('../authenticate');
+router.get('/players/new', checkAuth, playersCtrl.new);
+router.post('/players', checkAuth, playersCtrl.create);
+router.post('/teams/:id/players', checkAuth, playersCtrl.addToLineUp);
+
+function checkAuth(req, res, next) {
+    if (req.user) return next();
+    return res.status(401).json({
+        msg: "Not Authorized!"
+    });
+}
 
 module.exports = router;
