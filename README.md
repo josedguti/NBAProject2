@@ -17,7 +17,7 @@ Here is a web application that lets you create a player database, then create yo
 
 ![wireframe1](/public/images/wireframe1.png)
 ![websitepic1](/public/images/website1.png)
-![wireframe3]()
+![wireframe3](/public/images/website2.png)
 
 ## 🔌 Getting started
 
