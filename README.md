@@ -12,6 +12,7 @@ Here is a web application that lets you create a player database, then create yo
 - MongoDB / Mongoose
 - [Github](https://github.com/josedguti/nbaproject2) (for back-up and documentation purposes)
 - [Heroku](https://nba-project-app.herokuapp.com/) (for deployment purposes)
+- [Passport Google Auth2.0](http://www.passportjs.org/packages/passport-google-oauth2/) (to authenticate users)
 
 ## 📷 Screenshots
 
