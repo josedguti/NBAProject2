@@ -38,11 +38,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-image: url('../images/lebron.png');
+    background-image: url('../images/lebron2.jpeg');
     background-repeat: no-repeat;
     background-color: rgba(16, 18, 22, 0.9);
     
-    background-position: right center;
+   
     padding: 20px;
     overflow-y: scroll;
   }
@@ -95,7 +95,7 @@
   
   table thead th {
     padding: 5px;
-    border-bottom: 2px solid #424748;
+    border-bottom: 2px solid rgb(118, 131, 118);
   }
   
   table td {

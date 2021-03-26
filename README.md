@@ -17,8 +17,7 @@ Here is a web application that lets you create a player database, then create yo
 ## 📷 Screenshots
 
 ![wireframe1](/public/images/wireframe1.png)
-![websitepic1](/public/images/website1.png)
-![wireframe3](/public/images/website2.png)
+![websitepic1](/public/images/websitepic1.png)
 
 ## 🔌 Getting started
 
